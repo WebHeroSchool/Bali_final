@@ -1,0 +1,22 @@
+body{
+  margin:0;
+}
+.menu__item{
+  font: 22px/26px Museo Sans Cyrl, arial, helvetica, sans-serif;
+  text-decoration: none;
+}
+.section__title{
+  font: 700 285px/371px ptserif, arial, helvetica, sans-serif;
+}
+.section__text{
+  font: 700 98px/130px ptserif, arial, helvetica, sans-serif;
+}
+.section__subtitle{
+  font: 22px/26px Museo Sans Cyrl, arial, helvetica, sans-serif;
+}
+.section__button {
+  font: 22px/26px Museo Sans Cyrl, arial, helvetica, sans-serif;
+}
+.main__title{
+  font: bold 66px/87px ptserif, arial, helvetica, sans-serif;
+}
