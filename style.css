@@ -98,3 +98,96 @@ body{
   width: 284px;
   border-radius: 5px;
 }
+@media(max-width: 1367px){
+.header {
+  padding: 62px 0 40px 142px;
+}
+.logo {
+  width: 104px;
+  height: 39px;
+}
+.menu {
+  padding-right: 74px;
+}
+.menu__item {
+  margin-right: 26px;
+  font-size: 16px;
+  line-height: 19px;
+}
+.menu__item:last-child {
+  margin-right: 7px;
+}
+.main {
+  margin-top: 0;
+  margin-left: 0;
+}
+.section {
+  padding-left: 142px;
+}
+.section__title {
+  margin-top: 57px;
+  margin-bottom: -163px;
+  font-size: 200px;
+  line-height: 265px;
+}
+.section__text {
+  margin-left: 59px;
+  font-size: 70px;
+  line-height: 93px;
+}
+.section__subtitle {
+  margin-top: -4px;
+  max-width: 399px;
+  margin-left: 14px;
+  font-size: 16px;
+  line-height: 19px;
+}
+.section__button {
+  margin-top: 9px;
+  min-width: 182px;
+  padding: 13px;
+  margin-left: 17px;
+  font-size: 16px;
+  line-height: 19px;
+}
+.pict {
+  margin-top: -315px;
+  margin-left: 290px;
+}
+.pict__gallery {
+  margin-right: 24px;
+  width: 202px;
+  height: 270px;
+}
+.pict__gallery_big {
+  margin-left: 452px;
+  margin-right: 26px;
+  width: 225px;
+  height: 300px;
+}
+.pict__gallery:last-child {
+  width: 146px;
+  height: 270px;
+}
+}
+@media (max-width: 1024px) {
+.header {
+  padding-left: 41px;
+}
+.menu {
+  margin-top: 9px;
+  padding-right: 30px;
+} 
+.section {
+  padding-left: 40px;
+}
+.section__button {
+  margin-top: 12px;
+}
+.pict {
+  margin-left: 60px;
+}
+.pict__gallery_big {
+  margin-right: 24px;
+}
+}
