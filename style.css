@@ -20,13 +20,19 @@ body{
 }
 .menu__item{
   position: relative;
-  margin-right: 41px;
+  margin-right: 39px;
   margin-top: 2px;
   font: 22px/26px Museo Sans Cyrl, arial, helvetica, sans-serif;
   color: #f8eee4;
   text-decoration: none;
   transition: opacity 0.5s;
   cursor: pointer;
+}
+.menu__item:last-child{
+  margin-right: 5px;
+}
+.main {
+  position: relative;
 }
 .section {
   padding-left: 195px;
@@ -55,7 +61,7 @@ body{
   font: 22px/26px Museo Sans Cyrl, arial, helvetica, sans-serif;
 }
 .section__button {
-  margin-top: 15px;
+  margin-top: 13px;
   text-align: center;
   display: inline-block;
   font: 22px/26px Museo Sans Cyrl, arial, helvetica, sans-serif;
@@ -68,6 +74,27 @@ body{
   margin-left: 27px;
   transition: opacity 1s;
 }
-.main__title{
-  font: bold 66px/87px ptserif, arial, helvetica, sans-serif;
+.pict {
+  align-items: center;
+  display: flex;
+  margin-top: -443px;
+  margin-left: 596px;
+}
+.pict__gallery {
+  height: 380px;
+  width: 284px;
+  margin-right: 32px;
+  border-radius: 5px;
+}
+.pict__gallery_big {
+  height: 422px;
+  width: 325px;
+  margin-left: 447px;
+  margin-right: 32px;
+  border-radius: 5px;
+}
+.pict__gallery:last-child {
+  height: 385px;
+  width: 284px;
+  border-radius: 5px;
 }
