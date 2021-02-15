@@ -98,6 +98,22 @@ body{
   width: 284px;
   border-radius: 5px;
 }
+@media(max-width: 1650px){
+.header {
+  padding-right: 0px;
+}
+.menu {
+  padding-right: 0px;
+} 
+.menu__item:last-child {
+  margin-right: -137px;
+}
+}
+@media(max-width: 1595px){
+.menu__item:last-child {
+  margin-right: -197px;
+}
+}
 @media(max-width: 1367px){
 .header {
   padding: 62px 0 40px 142px;
@@ -151,7 +167,7 @@ body{
   line-height: 19px;
 }
 .pict {
-  margin-top: -315px;
+  margin-top: -316px;
   margin-left: 290px;
 }
 .pict__gallery {
@@ -182,12 +198,93 @@ body{
   padding-left: 40px;
 }
 .section__button {
-  margin-top: 12px;
+  margin-top: 10px;
 }
 .pict {
-  margin-left: 60px;
+  margin-left: 59px;
 }
 .pict__gallery_big {
   margin-right: 24px;
 }
+}
+@media (max-width: 590px){
+.menu{
+  display: none;
+}
+.pict{
+  display: none;
+}
+.header{
+  padding-top: 42px;
+}
+.section{
+  padding-left: 75px;
+}
+.section__title{
+  margin-top: -2px;
+  margin-bottom: -147px;
+  font-size: 170px;
+}
+.section__text{
+  margin-left: 59px;
+  font-size: 60px;
+  line-height: 79px;
+}
+.section__subtitle {
+  margin-top: 33px;
+  max-width: 290px;
+  margin-left: 27px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 22px;
+}
+.section__button {
+  margin-top: 17px;
+  margin-left: 62px;
+}
+.menu {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 172px 0;
+  background: #fff;
+  list-style: none;
+  text-align: center;
+  transition-duration: .8s;
+  z-index: 1;
+}
+.menu__item {
+  margin-right: 0;
+  text-transform: lowercase;
+  display: block;
+  padding: 11px 0;
+  color: #333;
+  font-family: Museo Sans Cyrl900, arial, helvetica, sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  text-decoration: none;
+  transition-duration: 1s;
+}
+.menu__item:last-child {
+  margin-right: -2px;
+}
+.menu__item:hover {
+  opacity: 1;
+  color: #D4BEA3;
+}
+}
+@media(max-width: 527px ){
+.section{
+  padding-left: 15px;
+}
+}
+@media (max-width: 470px){
+.menu__btn{
+  right: 32px;
+  }
 }
