@@ -1,21 +1,72 @@
 body{
   margin:0;
+  background: no-repeat fixed url(img/main.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+.wrapper{
+  width: 100%;
+  margin: auto;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 87px 0 40px 200px;
+}
+.menu{
+  padding-right: 110px;
+  display: flex;
+  align-items: center;
 }
 .menu__item{
+  position: relative;
+  margin-right: 41px;
+  margin-top: 2px;
   font: 22px/26px Museo Sans Cyrl, arial, helvetica, sans-serif;
+  color: #f8eee4;
   text-decoration: none;
+  transition: opacity 0.5s;
+  cursor: pointer;
+}
+.section {
+  padding-left: 195px;
+  display: inline-block;
 }
 .section__title{
-  font: 700 285px/371px ptserif, arial, helvetica, sans-serif;
+  border-top: 1px solid transparent;
+  margin: 95px 0 36px 0;
+  color: #F8EEE4;
+  font: 700 285px/371px pt_serifbold, arial, helvetica, sans-serif;
+  opacity: 40%;
+  margin-bottom: -224px;
 }
 .section__text{
-  font: 700 98px/130px ptserif, arial, helvetica, sans-serif;
+  margin-left: 90px;
+  margin-bottom: 14px;
+  color: #f8eee4;
+  font: 700 98px/130px pt_serifbold, arial, helvetica, sans-serif;
 }
 .section__subtitle{
+  padding-top: 5px;
+  margin-top: 8px;
+  max-width: 550px;
+  margin-left: 25px;
+  color: #f8eee4;
   font: 22px/26px Museo Sans Cyrl, arial, helvetica, sans-serif;
 }
 .section__button {
+  margin-top: 15px;
+  text-align: center;
+  display: inline-block;
   font: 22px/26px Museo Sans Cyrl, arial, helvetica, sans-serif;
+  color: #f8eee4;
+  background: #d4bea3;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 43px;
+  padding: 19px 89px 19px 89px;
+  margin-left: 27px;
+  transition: opacity 1s;
 }
 .main__title{
   font: bold 66px/87px ptserif, arial, helvetica, sans-serif;
