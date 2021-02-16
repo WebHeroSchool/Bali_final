@@ -31,6 +31,30 @@ body{
 .menu__item:last-child{
   margin-right: 5px;
 }
+.menu__item:hover{
+  opacity: .5;
+}
+.menu__item:after{
+  position: absolute;
+  display: block;
+  content: '';
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #0056EC;
+  opacity: 0;
+  transition: opacity.5s, width .5s;
+}
+.menu__item:hover{
+  opacity: 0.5;
+}
+.menu__item:hover:after, .menu__item_active:after{
+  opacity: 1;
+  width: 100%;
+}
+#menu__toggle {
+  display: none;
+}
 .main {
   position: relative;
 }
@@ -106,12 +130,12 @@ body{
   padding-right: 0px;
 } 
 .menu__item:last-child {
-  margin-right: -200px;
+  margin-right: -100px;
 }
 }
 @media(max-width: 1550px){
 .menu__item:last-child {
-  margin-right: -300px;
+  margin-right: -200px;
 }
 }
 @media(max-width: 1387px){
@@ -279,6 +303,60 @@ body{
 .menu__item:hover {
   opacity: 1;
   color: #D4BEA3;
+}
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 52px;
+  right: 55px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 2;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #fcf5ed;
+  transition-duration: 0.25s;
+}
+.menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+#menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  top: -12px;
+  right: -8px;
+  transform: rotate(45deg);
+  background: black;
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  right: 0;
+  transform: rotate(0);
+  background: black;
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  right: 0;
+  transform: rotate(90deg);
+  background: black;
+}
+#menu__toggle:checked ~ .menu {
+  visibility: visible;
+  left: 0;
 }
 }
 @media(max-width: 530px ){
